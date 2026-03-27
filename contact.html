@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | Commune M'diq</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius-sm);
+            font-family: 'Cairo', sans-serif;
+            transition: var(--transition-fast);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+        }
+        .contact-info-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .contact-info-box {
+            background: var(--bg-alt);
+            padding: 2rem;
+            border-radius: var(--border-radius-md);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-info-box i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .contact-info-box h4 {
+            margin-bottom: 0.25rem;
+            color: var(--text-dark);
+        }
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="شعار جماعة المضيق" style="height: 65px; width: auto; max-width: 100%; object-fit: contain;">
+                <span>جماعة المضيق</span>
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="button">الجماعة <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-label="submenu">
+                            <li><a href="commune.html">تقديم الجماعة</a></li>
+                            <li><a href="features.html">المؤهلات والمميزات</a></li>
+                            <li><a href="opportunities.html">الفرص</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="button">المجلس الجماعي <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-label="submenu">
+                            <li><a href="council.html">مكتب المجلس</a></li>
+                            <li><a href="committees.html">لجان المجلس</a></li>
+                            <li><a href="decisions.html">مقررات الدورات</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="button">الخدمات <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-label="submenu">
+                            <li><a href="services.html">قائمة الخدمات</a></li>
+                            <li><a href="taxes.html">الضرائب والرسوم</a></li>
+                            <li><a href="eservices.html">خدمات إلكترونية</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="governance.html" class="nav-link">الحكامة</a></li>
+                    <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="hero" style="min-height: 40vh; align-items: flex-end; padding-bottom: 4rem; background-position: top;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in-up" style="margin-top: 6rem; text-align: center;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">اتصل بنا</h1>
+            <p style="font-size: 1.1rem; margin-bottom: 0;">نحن هنا للاستماع إلى ملاحظاتكم واستفساراتكم</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="background-color: var(--white);">
+        <div class="container reveal">
+            <div class="contact-grid">
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 style="margin-bottom: 2rem; color: var(--primary-color);">أرسل لنا رسالة</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label" for="name">الاسم الكامل</label>
+                            <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">الموضوع</label>
+                            <input type="text" id="subject" class="form-control" placeholder="موضوع الرسالة أو الاستفسار" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">الرسالة</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">إرسال الرسالة</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div>
+                    <h2 style="margin-bottom: 2rem; color: var(--primary-color);">معلومات التواصل</h2>
+                    <div class="contact-info-boxes" style="margin-bottom: 2rem;">
+                        <div class="contact-info-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>العنوان الرئيسي</h4>
+                                <p style="color: var(--text-secondary); margin:0;">جماعة المضيق تجزئة اليمن طريق سد أسمير، المضيق، المغرب</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>الهاتف / الفاكس</h4>
+                                <p style="color: var(--text-secondary); margin:0;" dir="ltr">+212 539 97 50 12</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>البريد الإلكتروني</h4>
+                                <p style="color: var(--text-secondary); margin:0;">communedemdiq@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Fixed Map Embed (Placeholder visual graphic) -->
+                    <div style="background: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') center/cover; height: 250px; border-radius: var(--border-radius-lg); position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <div style="position: absolute; inset:0; background: rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center;">
+                            <a href="https://maps.app.goo.gl/Ex9HBhYZ7Mjca2J39" target="_blank" class="btn btn-primary" style="background: white; color: var(--primary-color); border:none;">
+                                <i class="fa-solid fa-location-arrow"></i> فتح في خرائط جوجل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="شعار جماعة المضيق" style="height: 65px; width: auto; max-width: 100%; object-fit: contain;">
+                        <span>جماعة المضيق</span>
+                    </a>
+                    <p>بوابة إلكترونية لتقريب الإدارة من المواطن وتكريس مبدأ الحكامة الجيدة والمشاركة المواطنة.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/communemdiq"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/communemdiq"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://youtube.com/communemdiq"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>روابط هامة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="details.html">خريطة الموقع</a></li>
+                        <li><a href="contact.html">فضاء الاقتراحات</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>روابط وطنية</h4>
+                    <ul>
+                        <li><a href="https://www.maroc.ma">بوابة المغرب</a></li>
+                        <li><a href="https://www.marchespublics.gov.ma">بوابة الصفقات العمومية</a></li>
+                        <li><a href="http://www.sgg.gov.ma">الأمانة العامة للحكومة</a></li>
+                        <li><a href="https://www.interieur.gov.ma">وزارة الداخلية</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>اتصل بنا</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> تجزئة اليمن، طريق سد أسمير، المضيق</li>
+                        <li><i class="fa-solid fa-envelope"></i> communedemdiq@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +212 539 97 50 12</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 جماعة المضيق. جميع الحقوق محفوظة.</p>
+                <div class="designer-credit">تصميم وتطوير بواسطة الذكاء الاصطناعي</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
