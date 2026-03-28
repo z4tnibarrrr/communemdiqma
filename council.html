@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    <!-- Page Progress Bar -->
+    <div id="page-progress" style="width:0%"></div>
+
 
     <!-- Header / Navbar -->
     <header class="navbar scrolled" id="navbar">
@@ -80,122 +83,89 @@
     <!-- Content Section -->
     <section class="section" style="background-color: var(--white);">
         <div class="container">
-            <div class="reveal" style="max-width: 1000px; margin: 0 auto;">
+            <div style="max-width: 1000px; margin: 0 auto;">
 
-                <div
-                    style="background: var(--bg-alt); padding: 3rem; border-radius: var(--border-radius-lg); margin-bottom: 2rem;">
-                    <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">تشكيلة مكتب المجلس</h2>
-                    <p style="margin-bottom: 2rem; color: var(--text-secondary);">
+                <div class="reveal" style="background: var(--bg-alt); padding: 3rem; border-radius: var(--border-radius-lg); margin-bottom: 3rem;">
+                    <h2 style="margin-bottom: 1.5rem; color: var(--primary-color); text-align: center;">تشكيلة مكتب المجلس</h2>
+                    <p style="margin-bottom: 2.5rem; color: var(--text-secondary); text-align: center; max-width: 700px; margin-left: auto; margin-right: auto;">
                         يتألف مكتب المجلس الجماعي للمضيق من الرئيس ونوابه، والذين يسهرون على تدبير الشؤون اليومية
                         للجماعة وتمثيلها في مختلف المحافل.
                     </p>
+
                     <!-- President Row -->
-                    <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
-                        <div
-                            style="background: white; padding: 2rem; border-radius: var(--border-radius-md); text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); width: 100%; max-width: 350px; border-top: 4px solid var(--primary-color);">
-                            <div
-                                style="width: 100px; height: 100px; border-radius: 50%; background: var(--bg-alt); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary-color); font-size: 2.5rem;">
-                                <i class="fa-solid fa-user-tie"></i></div>
-                            <h3 style="margin-bottom: 0.5rem; color: var(--primary-color); font-size: 1.5rem;">رئيس
-                                المجلس</h3>
-                            <p style="font-size: 1.1rem; color: var(--text-secondary); font-weight: 600;">رئيس المجلس
+                    <div style="display: flex; justify-content: center; margin-bottom: 2.5rem;">
+                        <div class="service-card" style="padding: 2rem; max-width: 300px; width: 100%; border-top: 4px solid var(--primary-color);">
+                            <div style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white; font-size: 2.5rem; box-shadow: 0 8px 25px rgba(13,59,102,0.3);">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <h3 style="margin-bottom: 0.4rem; color: var(--primary-color); font-size: 1.3rem;">رئيس المجلس</h3>
+                            <p style="font-size: 0.95rem; color: var(--text-secondary);">رئيس المجلس الجماعي</p>
                         </div>
                     </div>
 
-                    <!-- Vice Presidents Row 1 -->
-                    <div class="grid"
-                        style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-                        <!-- VP 1 -->
-                        <div
-                            style="background: white; padding: 1.5rem; border-radius: var(--border-radius-md); text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                            <div
-                                style="width: 70px; height: 70px; border-radius: 50%; background: var(--bg-alt); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--secondary-color); font-size: 1.8rem;">
-                                <i class="fa-solid fa-user"></i></div>
-                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">النائب الأول</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">عضو المكتب</p>
+                    <!-- Vice Presidents -->
+                    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+                        <div class="service-card reveal" style="padding: 1.5rem;">
+                            <div class="service-icon" style="width:60px;height:60px;font-size:1.6rem;"><i class="fa-solid fa-user-tie"></i></div>
+                            <h4 style="font-size: 1rem; color: var(--primary-color);">النائب الأول</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">عضو المكتب</p>
                         </div>
-                        <!-- VP 2 -->
-                        <div
-                            style="background: white; padding: 1.5rem; border-radius: var(--border-radius-md); text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                            <div
-                                style="width: 70px; height: 70px; border-radius: 50%; background: var(--bg-alt); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--secondary-color); font-size: 1.8rem;">
-                                <i class="fa-solid fa-user"></i></div>
-                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">النائب الثاني</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">عضو المكتب</p>
+                        <div class="service-card reveal" style="padding: 1.5rem; transition-delay: 0.05s;">
+                            <div class="service-icon" style="width:60px;height:60px;font-size:1.6rem;"><i class="fa-solid fa-user-tie"></i></div>
+                            <h4 style="font-size: 1rem; color: var(--primary-color);">النائب الثاني</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">عضو المكتب</p>
                         </div>
-                        <!-- VP 3 -->
-                        <div
-                            style="background: white; padding: 1.5rem; border-radius: var(--border-radius-md); text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                            <div
-                                style="width: 70px; height: 70px; border-radius: 50%; background: var(--bg-alt); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--secondary-color); font-size: 1.8rem;">
-                                <i class="fa-solid fa-user"></i></div>
-                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">النائب الثالث</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">عضو المكتب</p>
+                        <div class="service-card reveal" style="padding: 1.5rem; transition-delay: 0.1s;">
+                            <div class="service-icon" style="width:60px;height:60px;font-size:1.6rem;"><i class="fa-solid fa-user-tie"></i></div>
+                            <h4 style="font-size: 1rem; color: var(--primary-color);">النائب الثالث</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">عضو المكتب</p>
                         </div>
-                    </div>
-
-                    <!-- Vice Presidents Row 2 -->
-                    <div class="grid"
-                        style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-                        <!-- VP 4 -->
-                        <div
-                            style="background: white; padding: 1.5rem; border-radius: var(--border-radius-md); text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                            <div
-                                style="width: 70px; height: 70px; border-radius: 50%; background: var(--bg-alt); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--secondary-color); font-size: 1.8rem;">
-                                <i class="fa-solid fa-user"></i></div>
-                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">النائب الرابع</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">عضو المكتب</p>
+                        <div class="service-card reveal" style="padding: 1.5rem; transition-delay: 0.15s;">
+                            <div class="service-icon" style="width:60px;height:60px;font-size:1.6rem;"><i class="fa-solid fa-user-tie"></i></div>
+                            <h4 style="font-size: 1rem; color: var(--primary-color);">النائب الرابع</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">عضو المكتب</p>
                         </div>
-                        <!-- VP 5 -->
-                        <div
-                            style="background: white; padding: 1.5rem; border-radius: var(--border-radius-md); text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                            <div
-                                style="width: 70px; height: 70px; border-radius: 50%; background: var(--bg-alt); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--secondary-color); font-size: 1.8rem;">
-                                <i class="fa-solid fa-user"></i></div>
-                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">النائب الخامس</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">عضو المكتب</p>
+                        <div class="service-card reveal" style="padding: 1.5rem; transition-delay: 0.2s;">
+                            <div class="service-icon" style="width:60px;height:60px;font-size:1.6rem;"><i class="fa-solid fa-user-tie"></i></div>
+                            <h4 style="font-size: 1rem; color: var(--primary-color);">النائب الخامس</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">عضو المكتب</p>
                         </div>
-                        <!-- VP 6 -->
-                        <div
-                            style="background: white; padding: 1.5rem; border-radius: var(--border-radius-md); text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                            <div
-                                style="width: 70px; height: 70px; border-radius: 50%; background: var(--bg-alt); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--secondary-color); font-size: 1.8rem;">
-                                <i class="fa-solid fa-user"></i></div>
-                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem;">النائب السادس</h4>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary);">عضو المكتب</p>
+                        <div class="service-card reveal" style="padding: 1.5rem; transition-delay: 0.25s;">
+                            <div class="service-icon" style="width:60px;height:60px;font-size:1.6rem;"><i class="fa-solid fa-user-tie"></i></div>
+                            <h4 style="font-size: 1rem; color: var(--primary-color);">النائب السادس</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">عضو المكتب</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="grid services-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                    <div class="service-card" style="padding: 2rem; background: var(--bg-alt);">
+                <div class="grid services-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="service-card" style="padding: 2rem;">
                         <div class="service-icon"><i class="fa-solid fa-users-gear"></i></div>
                         <h3>تشكيلة لجان المجلس</h3>
                         <p>قائمة اللجان الدائمة والمؤقتة للمجلس المكلفة بالدراسات والتحضير للدورات المجالسية.</p>
-                        <a href="details.html" class="btn btn-outline" style="margin-top: 1rem;"><i
-                                class="fa-solid fa-arrow-left"></i> التفاصيل</a>
+                        <a href="committees.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.95rem;">عرض اللجان</a>
                     </div>
 
-                    <div class="service-card" style="padding: 2rem; background: var(--bg-alt);">
+                    <div class="service-card" style="padding: 2rem; transition-delay: 0.1s;">
                         <div class="service-icon"><i class="fa-solid fa-book-open"></i></div>
                         <h3>النظام الداخلي للمجلس</h3>
                         <p>القوانين والضوابط التي تنظم سير جلسات المجلس وكيفية التصويت واتخاذ القرارات.</p>
-                        <a href="details.html" class="btn btn-outline" style="margin-top: 1rem;"><i
-                                class="fa-solid fa-arrow-left"></i> التفاصيل</a>
+                        <a href="governance.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.95rem;">اقرأ المزيد</a>
                     </div>
 
-                    <div class="service-card" style="padding: 2rem; background: var(--bg-alt);">
+                    <div class="service-card" style="padding: 2rem; transition-delay: 0.2s;">
                         <div class="service-icon"><i class="fa-solid fa-calendar-check"></i></div>
                         <h3>مقررات ومواعيد الجلسات</h3>
                         <p>ملخصات مقررات الدورات العادية والاستثنائية، بالإضافة إلى جدول أعمال الجلسات القادمة.</p>
-                        <a href="details.html" class="btn btn-outline" style="margin-top: 1rem;"><i
-                                class="fa-solid fa-arrow-left"></i> التفاصيل</a>
+                        <a href="decisions.html" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.95rem;">المقررات</a>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="footer">

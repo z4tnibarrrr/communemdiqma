@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Page Progress Bar -->
+    <div id="page-progress" style="width:0%"></div>
 
     <!-- Header / Navbar -->
     <header class="navbar" id="navbar">
@@ -70,7 +72,41 @@
                 <a href="#news" class="btn btn-outline">أحدث الأخبار</a>
             </div>
         </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+            <span>تمرير</span>
+        </div>
     </section>
+
+    <!-- Stats / Counters Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <span class="stat-number" data-target="65000" data-suffix="+">0</span>
+                    <div class="stat-label">ساكن بالمدينة</div>
+                </div>
+                <div class="stat-card reveal" style="transition-delay:0.1s">
+                    <div class="stat-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
+                    <span class="stat-number" data-target="14" data-suffix=" كم">0</span>
+                    <div class="stat-label">امتداد الشريط الساحلي</div>
+                </div>
+                <div class="stat-card reveal" style="transition-delay:0.2s">
+                    <div class="stat-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <span class="stat-number" data-target="35" data-suffix="+">0</span>
+                    <div class="stat-label">مرفق عمومي</div>
+                </div>
+                <div class="stat-card reveal" style="transition-delay:0.3s">
+                    <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <span class="stat-number" data-target="120" data-suffix="+">0</span>
+                    <div class="stat-label">مشروع منجز</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Essential Services Grid -->
     <section class="section services-section" id="services">
@@ -110,7 +146,7 @@
     <section class="section governance-section" id="governance">
         <div class="container">
             <div class="governance-wrapper">
-                <div class="governance-content reveal">
+                <div class="governance-content reveal-left">
                     <h2>الحكامة والمجلس الجماعي</h2>
                     <p>تلتزم جماعة المضيق بمبادئ الشفافية والتدبير العقلاني من خلال إشراك المواطنين و توفير المعلومات بكل مصداقية.</p>
                     <ul class="feature-list">
@@ -120,13 +156,51 @@
                     </ul>
                     <a href="council.html" class="btn btn-primary mt-4">اقرأ المزيد عن المجلس</a>
                 </div>
-                <div class="governance-image reveal" style="transition-delay: 0.2s;">
+                <div class="governance-image reveal-right" style="transition-delay: 0.2s;">
                     <img src="assets/images/mdiq_governance_1774589998851.png" alt="مقر جماعة المضيق">
                     <div class="image-accent"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- City Highlights -->
+    <section class="city-highlights-section" id="highlights">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>مميزات المدينة</h2>
+                <p>اكتشف ما يجعل المضيق وجهة استثنائية على الشريط المتوسطي</p>
+                <div class="header-line"></div>
+            </div>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="highlight-card reveal">
+                    <img class="highlight-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="شواطئ المضيق">
+                    <div class="highlight-body">
+                        <span class="highlight-tag"><i class="fa-solid fa-water"></i> سياحة</span>
+                        <h3>شواطئ ذهبية</h3>
+                        <p>14 كيلومتراً من الشواطئ النظيفة تطل على البحر الأبيض المتوسط بمياه صافية وهواء منعش.</p>
+                    </div>
+                </div>
+                <div class="highlight-card reveal" style="transition-delay: 0.1s;">
+                    <img class="highlight-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="ميناء المضيق">
+                    <div class="highlight-body">
+                        <span class="highlight-tag"><i class="fa-solid fa-anchor"></i> اقتصاد</span>
+                        <h3>ميناء الصيد والترفيه</h3>
+                        <p>ميناء متعدد الأغراض يجمع بين الصيد التقليدي والترفيه البحري، يساهم في دينامية المدينة الاقتصادية.</p>
+                    </div>
+                </div>
+                <div class="highlight-card reveal" style="transition-delay: 0.2s;">
+                    <img class="highlight-img" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="طبيعة المضيق" >
+                    <div class="highlight-body">
+                        <span class="highlight-tag"><i class="fa-solid fa-mountain-sun"></i> طبيعة</span>
+                        <h3>محيط طبيعي خلاب</h3>
+                        <p>يحيط بالمدينة غطاء غابوي كثيف وجبال شامخة تشكل بيئة فريدة بين البر والبحر.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- News & Events -->
     <section class="section news-section" id="news">
@@ -154,7 +228,7 @@
                 <!-- News Item 2 -->
                 <article class="news-card reveal" style="transition-delay: 0.1s;">
                     <div class="news-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1518605368461-1e905d45d3cc?auto=format&fit=crop&q=80&w=600" alt="دوري كرة القدم" class="news-image">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=600" alt="دوري كرة القدم" class="news-image">
                         <div class="news-date">12 مارس 2026</div>
                     </div>
                     <div class="news-content">
@@ -178,10 +252,20 @@
                 </article>
             </div>
             <div class="text-center mt-5 reveal">
-                <a href="details.html" class="btn btn-outline">جميع الأخبار</a>
+                <a href="details.html" class="btn btn-outline" style="color: var(--primary-color); border-color: var(--primary-color);">جميع الأخبار</a>
             </div>
         </div>
     </section>
+
+    <!-- CTA Strip -->
+    <section class="cta-strip">
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2>لديك استفسار أو اقتراح؟</h2>
+            <p>فريق جماعة المضيق في خدمتك. تواصل معنا لأي استفسار أو ملاحظة وسنرد عليك في أقرب وقت ممكن.</p>
+            <a href="contact.html" class="btn btn-primary" style="background: white; color: var(--primary-color);">تواصل معنا <i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer">
