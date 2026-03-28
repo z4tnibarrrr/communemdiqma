@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جماعة المضيق | Commune M'diq</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="شعار جماعة المضيق" style="height: 65px; width: auto; max-width: 100%; object-fit: contain;">
+                <span>جماعة المضيق</span>
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="button">الجماعة <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-label="submenu">
+                            <li><a href="commune.html">تقديم الجماعة</a></li>
+                            <li><a href="features.html">المؤهلات والمميزات</a></li>
+                            <li><a href="opportunities.html">الفرص</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="button">المجلس الجماعي <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-label="submenu">
+                            <li><a href="council.html">مكتب المجلس</a></li>
+                            <li><a href="committees.html">لجان المجلس</a></li>
+                            <li><a href="decisions.html">مقررات الدورات</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false" role="button">الخدمات <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-label="submenu">
+                            <li><a href="services.html">قائمة الخدمات</a></li>
+                            <li><a href="taxes.html">الضرائب والرسوم</a></li>
+                            <li><a href="eservices.html">خدمات إلكترونية</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="governance.html" class="nav-link">الحكامة</a></li>
+                    <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in-up">
+            <h1>مرحباً بكم في البوابة الرسمية لجماعة المضيق</h1>
+            <p>مدينة عريقة، رؤية مستقبلية، وخدمات في متناول المواطنين والمقاولات، نرتقي بها نحو الأفضل معاً.</p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary">اكتشف الخدمات <i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#news" class="btn btn-outline">أحدث الأخبار</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Services Grid -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>خدمات للمواطنين والمقاولات</h2>
+                <p>باقة من الخدمات الإدارية المصممة لتسهيل مسطرة قضاء أغراضكم بكفاءة وسرعة</p>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="grid services-grid">
+                <a href="services.html" class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-file"></i></div>
+                    <h3>خدمات إلكترونية</h3>
+                    <p>الولوج إلى المنصات الرقمية لتقديم الطلبات واستخراج الوثائق الإدارية عن بعد.</p>
+                </a>
+                <a href="services.html" class="service-card reveal" style="transition-delay: 0.1s;">
+                    <div class="service-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <h3>الضرائب والرسوم</h3>
+                    <p>معلومات مفصلة حول الجبايات المحلية، وكيفية وتواريخ تسديد الضرائب.</p>
+                </a>
+                <a href="services.html" class="service-card reveal" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>القرارات التنظيمية</h3>
+                    <p>اطلع على أحدث القرارات والمراسيم الصادرة عن رئيس المجلس الجماعي.</p>
+                </a>
+                <a href="services.html" class="service-card reveal" style="transition-delay: 0.3s;">
+                    <div class="service-icon"><i class="fa-solid fa-building-user"></i></div>
+                    <h3>ساعات العمل والمرافق</h3>
+                    <p>دليل مفصل لساعات عمل شبابيك الجماعة وتوزيع المرافق العمومية وعناوينها.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance and City Info -->
+    <section class="section governance-section" id="governance">
+        <div class="container">
+            <div class="governance-wrapper">
+                <div class="governance-content reveal">
+                    <h2>الحكامة والمجلس الجماعي</h2>
+                    <p>تلتزم جماعة المضيق بمبادئ الشفافية والتدبير العقلاني من خلال إشراك المواطنين و توفير المعلومات بكل مصداقية.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> <strong>تقارير التدقيق:</strong> نشر سنوي لنتائج التقييم.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>الميزانية المفتوحة:</strong> حق المواطن في التعرف على ميزانية مدينته.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>مباريات التوظيف:</strong> الشفافية المطلقة في ولوج الوظيفة العمومية.</li>
+                    </ul>
+                    <a href="council.html" class="btn btn-primary mt-4">اقرأ المزيد عن المجلس</a>
+                </div>
+                <div class="governance-image reveal" style="transition-delay: 0.2s;">
+                    <img src="assets/images/mdiq_governance_1774589998851.png" alt="مقر جماعة المضيق">
+                    <div class="image-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section class="section news-section" id="news">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>أخبار وأنشطة الجماعة</h2>
+                <p>تابعوا آخر المستجدات والإعلانات الخاصة بمدينة المضيق</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="grid news-grid">
+                <!-- News Item 1 -->
+                <article class="news-card reveal">
+                    <div class="news-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&q=80&w=600" alt="اجتماع المجلس الجماعي" class="news-image">
+                        <div class="news-date">15 مارس 2026</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>المجلس الجماعي للمضيق يصادق على مشاريع جديدة</h3>
+                        <p>خلال الدورة الاستثنائية، تم المصادقة بالإجماع على ميزانية التهيئة الحضرية للشريط الساحلي...</p>
+                        <a href="details.html" class="read-more">التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+                
+                <!-- News Item 2 -->
+                <article class="news-card reveal" style="transition-delay: 0.1s;">
+                    <div class="news-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1518605368461-1e905d45d3cc?auto=format&fit=crop&q=80&w=600" alt="دوري كرة القدم" class="news-image">
+                        <div class="news-date">12 مارس 2026</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>رئيس الجماعة يترأس حفل تتويج فعاليات الدوري الرمضاني</h3>
+                        <p>في إطار دعم الرياضة المحلية، تم توزيع الجوائز على الفرق المشاركة في الدوري الرمضاني المنظم بملاعب القرب...</p>
+                        <a href="details.html" class="read-more">التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Item 3 -->
+                <article class="news-card reveal" style="transition-delay: 0.2s;">
+                    <div class="news-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600" alt="مشاريع المجتمع المدني" class="news-image">
+                        <div class="news-date">08 مارس 2026</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>إعلان عن طلبات عروض مشاريع لفائدة الجمعيات</h3>
+                        <p>تعلن جماعة المضيق عن فتح باب وضع ملفات الدعم المالي واللوجيستي لجمعيات المجتمع المدني النشيطة في المجال البيئي...</p>
+                        <a href="details.html" class="read-more">التفاصيل <i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-5 reveal">
+                <a href="details.html" class="btn btn-outline">جميع الأخبار</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="شعار جماعة المضيق" style="height: 65px; width: auto; max-width: 100%; object-fit: contain;">
+                        <span>جماعة المضيق</span>
+                    </a>
+                    <p>بوابة إلكترونية لتقريب الإدارة من المواطن وتكريس مبدأ الحكامة الجيدة والمشاركة المواطنة.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/communemdiq"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/communemdiq"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://youtube.com/communemdiq"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>روابط هامة</h4>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="details.html">خريطة الموقع</a></li>
+                        <li><a href="contact.html">فضاء الاقتراحات</a></li>
+                        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>روابط وطنية</h4>
+                    <ul>
+                        <li><a href="https://www.maroc.ma">بوابة المغرب</a></li>
+                        <li><a href="https://www.marchespublics.gov.ma">بوابة الصفقات العمومية</a></li>
+                        <li><a href="http://www.sgg.gov.ma">الأمانة العامة للحكومة</a></li>
+                        <li><a href="https://www.interieur.gov.ma">وزارة الداخلية</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>اتصل بنا</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> تجزئة اليمن، طريق سد أسمير، المضيق</li>
+                        <li><i class="fa-solid fa-envelope"></i> communedemdiq@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +212 539 97 50 12</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 جماعة المضيق. جميع الحقوق محفوظة.</p>
+                <div class="designer-credit">تصميم وتطوير بواسطة الذكاء الاصطناعي</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
